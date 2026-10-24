@@ -23,7 +23,7 @@ export const DatabaseService = {
 
   async createProject(project: Omit<Project, "id" | "created_at" | "updated_at">): Promise<Project> {
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from("projects")
         .insert([project])
         .select()
@@ -40,7 +40,7 @@ export const DatabaseService = {
 
   async updateProject(id: string, updates: Partial<Project>, userId: string): Promise<Project | null> {
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from("projects")
         .update(updates)
         .eq("id", id)
@@ -99,7 +99,7 @@ export const DatabaseService = {
 
   async createTask(task: Omit<Task, "id" | "created_at" | "updated_at">): Promise<Task> {
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from("tasks")
         .insert([task])
         .select()
@@ -116,7 +116,7 @@ export const DatabaseService = {
 
   async updateTask(id: string, updates: Partial<Task>, userId: string): Promise<Task | null> {
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from("tasks")
         .update(updates)
         .eq("id", id)
@@ -135,7 +135,7 @@ export const DatabaseService = {
 
   async deleteTask(id: string, userId: string): Promise<boolean> {
     if (isSupabaseConfigured && supabase) {
-      const { error } = await supabase
+      const { error } = await (supabase as any)
         .from("tasks")
         .delete()
         .eq("id", id)
@@ -153,7 +153,7 @@ export const DatabaseService = {
   // Leads
   async createLead(lead: { name: string; email: string; message?: string }): Promise<Lead> {
     if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from("leads")
         .insert([
           {

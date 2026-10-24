@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Sparkles, Github, Twitter, Linkedin, Heart } from "lucide-react";
+import { Sparkles, Globe, Code2, Heart } from "lucide-react";
 
 export function Footer() {
   return (
@@ -30,7 +30,7 @@ export function Footer() {
                 aria-label="GitHub Repository"
                 className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
-                <Github className="w-4 h-4" />
+                <Code2 className="w-4 h-4" />
               </a>
               <a
                 href="https://linkedin.com"
@@ -39,7 +39,7 @@ export function Footer() {
                 aria-label="LinkedIn"
                 className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
-                <Linkedin className="w-4 h-4" />
+                <Globe className="w-4 h-4" />
               </a>
               <div className="flex items-center gap-1.5 ml-2 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
