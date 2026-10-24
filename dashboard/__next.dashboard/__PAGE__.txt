@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+2:"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/3yf_0ky4f9tzt.js"
+3:"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/0zj8f8-2-5n7k.js"
+4:I[65150,["$2","$3"],"ThemeProvider"]
+5:I[32341,["$2","$3"],"AuthProvider"]
+6:I[39756,["$2","$3"],"default"]
+7:I[37457,["$2","$3"],"default"]
+d:I[47257,["$2","$3"],"ClientPageRoot"]
+e:"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/2-9oqzjobh5b8.js"
+f:"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1qk_60et2kcdb.js"
+10:"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1y6e8yyg21u-5.js"
+11:I[30257,["$2","$3","$e","$f","$10"],"default"]
+14:I[97367,["$2","$3"],"OutletBoundary"]
+15:"$Sreact.suspense"
+18:"ViewportBoundary"
+19:I[97367,["$2","$3"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$2","$3"],"$1a"]
+:HL["/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1joeuizy88fu_.css","style"]
+9:X
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$Ld",null,{"Component":"$11","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@12","$@13"]}}],[["$","script","script-0",{"src":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/2-9oqzjobh5b8.js","async":true}],["$","script","script-1",{"src":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1qk_60et2kcdb.js","async":true}],["$","script","script-2",{"src":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1y6e8yyg21u-5.js","async":true}]],["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]]}],"p":"$@17","v":null,"s":"$9"}}]]
+a:[["children",{"s":"dashboard","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","div",null,{"className":"min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col","children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]}]]}],"p":"$@b","v":null,"s":"$9"},"c":"$Qc"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/1joeuizy88fu_.css","precedence":"next"}],["$","script","script-0",{"src":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/3yf_0ky4f9tzt.js","async":true}],["$","script","script-1",{"src":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/_next/static/chunks/0zj8f8-2-5n7k.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"T19VSG_variable _8Li5zG_variable h-full antialiased","children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  const stored = localStorage.getItem('launchpilot_theme');\n                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;\n                  if (stored === 'dark' || (!stored && prefersDark)) {\n                    document.documentElement.classList.add('dark');\n                  } else {\n                    document.documentElement.classList.remove('dark');\n                  }\n                } catch (e) {}\n              })();\n            "}}]}],["$","body",null,{"className":"min-h-full flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200","children":["$","$L4",null,{"children":["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]]}]]}],"p":"$@8","v":null,"s":"$9"},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$15",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Dashboard — LaunchPilot AI"}],["$","meta","1",{"name":"description","content":"Manage projects, prioritize tasks, and orchestrate smart AI assistance."}],["$","meta","2",{"name":"author","content":"LaunchPilot AI Team"}],["$","meta","3",{"name":"keywords","content":"AI workspace,project management,task manager,SaaS dashboard,freelancer tools,founder copilot"}],["$","meta","4",{"property":"og:title","content":"LaunchPilot AI — Unified AI Workspace"}],["$","meta","5",{"property":"og:description","content":"Organize projects, prioritize tasks, and orchestrate smart AI assistance from one elegant dashboard."}],["$","meta","6",{"property":"og:locale","content":"en_US"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"LaunchPilot AI — Unified AI Workspace"}],["$","meta","10",{"name":"twitter:description","content":"Organize projects, prioritize tasks, and orchestrate smart AI assistance from one elegant dashboard."}],["$","link","11",{"rel":"icon","href":"/Datheon_Vibe_Coding_Mastery_-_Capstone_Project/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],"$L1c"]}]}],null]}],"$L1d"]}],"p":"$@1e","v":null,"s":"$9"}},"a":"$@1f","u":"$@20","b":"zr6luNBJ7PrwRjjtHQnJ8"}
+21:I[27201,["$2","$3"],"IconMark"]
+12:{}
+13:"$c:0:1:d:r:props:children:0:props:serverProvidedParams:params"
+16:null
+1c:["$","$L21","12",{}]
+1d:["$","meta",null,{"name":"next-size-adjust","content":""}]
+9:300
+20:true
+9:C
+1f:0
+b:"$undefined"
+8:"$undefined"
+1e:"$undefined"
+17:"$undefined"

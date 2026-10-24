@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" fill="none">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-3%" y="-3%" width="106%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+    <marker id="arrowIndigo" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#4F46E5"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10B981"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="640" rx="16" fill="url(#archBg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="639" rx="15.5" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- Top Title Bar -->
+  <g transform="translate(60, 40)">
+    <rect width="180" height="24" rx="12" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+    <text x="90" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#4338CA" text-anchor="middle">SYSTEM ARCHITECTURE</text>
+    
+    <text x="0" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#0F172A">
+      LaunchPilot AI End-to-End Architecture
+    </text>
+    <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#64748B">
+      Decoupled multi-tier design featuring Next.js 15 App Router, Server-Side AI Orchestration, and PostgreSQL RLS
+    </text>
+  </g>
+
+  <!-- ================= TIER 1: CLIENT PRESENTATION LAYER ================= -->
+  <g transform="translate(60, 150)" filter="url(#boxShadow)">
+    <rect width="510" height="205" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Tier Header -->
+    <rect width="510" height="42" rx="12" fill="#F8FAFC"/>
+    <path d="M 0,12 Q 0,0 12,0 L 498,0 Q 510,0 510,12 L 510,42 L 0,42 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="42" x2="510" y2="42" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <circle cx="24" cy="21" r="7" fill="#EEF2FF"/>
+    <circle cx="24" cy="21" r="3.5" fill="#4F46E5"/>
+    <text x="42" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+      1. Presentation &amp; Client Layer (Next.js 15 + React 19)
+    </text>
+
+    <!-- Component Modules inside Tier 1 -->
+    <g transform="translate(16, 56)">
+      <!-- Module A -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Responsive Landing Page</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Bento Grid • Persona Showcases</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#0284C7">360px Mobile to 4K Desktop</text>
+      </g>
+
+      <!-- Module B -->
+      <g transform="translate(248, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Zero-Flicker Theme Engine</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Light &amp; Dark Mode Tokens</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">WCAG 2.2 AA Contrast Verified</text>
+      </g>
+
+      <!-- Module C -->
+      <g transform="translate(0, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Authenticated Dashboard</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Initiative &amp; Task CRUD Matrix</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#7C3AED">Optimistic UI State Updates</text>
+      </g>
+
+      <!-- Module D -->
+      <g transform="translate(248, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Auth &amp; Lead Capture</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">AuthModal • Session Lifecycle</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#D97706">Client Input Pre-Validation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= TIER 2: SERVER API & SECURITY BOUNDARY ================= -->
+  <g transform="translate(630, 150)" filter="url(#boxShadow)">
+    <rect width="510" height="205" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Tier Header -->
+    <path d="M 0,12 Q 0,0 12,0 L 498,0 Q 510,0 510,12 L 510,42 L 0,42 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="42" x2="510" y2="42" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <circle cx="24" cy="21" r="7" fill="#E0F2FE"/>
+    <circle cx="24" cy="21" r="3.5" fill="#0284C7"/>
+    <text x="42" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+      2. Server Route Handlers &amp; Security Boundary
+    </text>
+
+    <!-- Component Modules inside Tier 2 -->
+    <g transform="translate(16, 56)">
+      <!-- Module A -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">POST /api/ai/copilot</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Rate Limiter • In-Flight Throttling</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#4F46E5">Sanitizes Prompts &amp; Context</text>
+      </g>
+
+      <!-- Module B -->
+      <g transform="translate(248, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">POST /api/leads</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Server-Side Email Regex Check</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">Direct Supabase Ingestion</text>
+      </g>
+
+      <!-- Module C -->
+      <g transform="translate(0, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Zero-Leakage Security</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">OPENAI_API_KEY never bundled</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#DC2626">Server-Only Environment Isolation</text>
+      </g>
+
+      <!-- Module D -->
+      <g transform="translate(248, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Session &amp; Token Guard</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">JWT Cookie Verification</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#0284C7">Automatic Token Refresh</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= TIER 3: SERVER-SIDE AI COPILOT ORCHESTRATION ================= -->
+  <g transform="translate(60, 395)" filter="url(#boxShadow)">
+    <rect width="510" height="205" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Tier Header -->
+    <path d="M 0,12 Q 0,0 12,0 L 498,0 Q 510,0 510,12 L 510,42 L 0,42 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="42" x2="510" y2="42" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <circle cx="24" cy="21" r="7" fill="#F3E8FF"/>
+    <circle cx="24" cy="21" r="3.5" fill="#7C3AED"/>
+    <text x="42" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+      3. AI Copilot Multi-Provider Orchestrator
+    </text>
+
+    <!-- Component Modules inside Tier 3 -->
+    <g transform="translate(16, 56)">
+      <!-- Module A -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Multi-Provider Adapter</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">OpenAI GPT-4o-mini / Gemini</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#7C3AED">Seamless Automatic Failover</text>
+      </g>
+
+      <!-- Module B -->
+      <g transform="translate(248, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Synthesizer Fallback</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">100% Deterministic Local Engine</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">Works with No External Keys</text>
+      </g>
+
+      <!-- Module C -->
+      <g transform="translate(0, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Structured Output Schema</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">3 Milestones • Prioritized Tasks</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#4F46E5">Failure Mitigation Strategies</text>
+      </g>
+
+      <!-- Module D -->
+      <g transform="translate(248, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">1-Click Deliverable Sync</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Convert Copilot items to Tasks</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#0284C7">Direct Persistence into Supabase</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= TIER 4: SUPABASE CLOUD & DATA ISOLATION ================= -->
+  <g transform="translate(630, 395)" filter="url(#boxShadow)">
+    <rect width="510" height="205" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Tier Header -->
+    <path d="M 0,12 Q 0,0 12,0 L 498,0 Q 510,0 510,12 L 510,42 L 0,42 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="42" x2="510" y2="42" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <circle cx="24" cy="21" r="7" fill="#DCFCE7"/>
+    <circle cx="24" cy="21" r="3.5" fill="#16A34A"/>
+    <text x="42" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+      4. Supabase PostgreSQL 16 &amp; Row Level Security (RLS)
+    </text>
+
+    <!-- Component Modules inside Tier 4 -->
+    <g transform="translate(16, 56)">
+      <!-- Module A: profiles table -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Table: profiles</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">id = auth.uid()</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">Self-user reads &amp; updates only</text>
+      </g>
+
+      <!-- Module B: projects table -->
+      <g transform="translate(248, 0)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Table: projects</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">user_id foreign key constraint</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">RLS isolated per tenant</text>
+      </g>
+
+      <!-- Module C: tasks table -->
+      <g transform="translate(0, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Table: tasks</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">project_id cascade relations</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#16A34A">Tenant ownership cascade</text>
+      </g>
+
+      <!-- Module D: leads table & fallback -->
+      <g transform="translate(248, 72)">
+        <rect width="230" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Table: leads &amp; LocalStorage</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#64748B">Public INSERT only (non-queryable)</text>
+        <text x="12" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#2563EB">Seamless Offline Mirror Fallback</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connective Arrows between Tiers -->
+  <!-- Tier 1 to Tier 2: Horizontal Arrow -->
+  <line x1="570" y1="230" x2="622" y2="230" stroke="#4F46E5" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowIndigo)"/>
+  <rect x="578" y="210" width="36" height="16" rx="4" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="596" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" fill="#4338CA" text-anchor="middle">HTTPS</text>
+
+  <!-- Tier 2 to Tier 3: Diagonal Down-Left Arrow -->
+  <path d="M 640 355 L 610 375 L 560 395" fill="none" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowPurple)"/>
+
+  <!-- Tier 3 to Tier 4: Horizontal Arrow -->
+  <line x1="570" y1="495" x2="622" y2="495" stroke="#10B981" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowGreen)"/>
+  <rect x="578" y="475" width="36" height="16" rx="4" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="596" y="487" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" fill="#047857" text-anchor="middle">RLS DB</text>
+
+</svg>
