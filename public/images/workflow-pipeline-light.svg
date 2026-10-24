@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" fill="none">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="pipeDrop" x="-3%" y="-5%" width="106%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+    <marker id="pipeArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#pipeBg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="15.5" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- Section Title -->
+  <g transform="translate(60, 32)">
+    <rect width="170" height="22" rx="11" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+    <text x="85" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#4338CA" text-anchor="middle">EXECUTION PIPELINE</text>
+    
+    <text x="0" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#0F172A">
+      From Natural-Language Vision to Shipped Software
+    </text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748B">
+      The systematic 4-phase transformation powering every LaunchPilot AI initiative
+    </text>
+  </g>
+
+  <!-- Connecting Line across all steps -->
+  <line x1="170" y1="210" x2="1030" y2="210" stroke="#E2E8F0" stroke-width="3"/>
+
+  <!-- ================= 4 PIPELINE STEPS ================= -->
+  <!-- STEP 1 -->
+  <g transform="translate(60, 120)" filter="url(#pipeDrop)">
+    <rect width="245" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(16, 16)">
+      <!-- Step Badge -->
+      <rect width="58" height="20" rx="10" fill="#EEF2FF"/>
+      <text x="29" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#4F46E5" text-anchor="middle">STEP 01</text>
+      
+      <circle cx="195" cy="10" r="12" fill="#EEF2FF"/>
+      <text x="195" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#4F46E5" text-anchor="middle">1</text>
+
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Prompt Product Vision</text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#4F46E5">Natural-Language Input</text>
+
+      <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        User describes product concept,
+      </text>
+      <text x="0" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        target users, and requirements
+      </text>
+      <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        in plain conversational text.
+      </text>
+
+      <rect x="0" y="132" width="213" height="24" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="10" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#64748B">💡 "AI-powered workout app..."</text>
+    </g>
+  </g>
+
+  <!-- STEP 2 -->
+  <g transform="translate(335, 120)" filter="url(#pipeDrop)">
+    <rect width="245" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(16, 16)">
+      <!-- Step Badge -->
+      <rect width="58" height="20" rx="10" fill="#F5F3FF"/>
+      <text x="29" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#7C3AED" text-anchor="middle">STEP 02</text>
+
+      <circle cx="195" cy="10" r="12" fill="#F5F3FF"/>
+      <text x="195" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">2</text>
+
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Copilot Decomposition</text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#7C3AED">Server-Side LLM Engine</text>
+
+      <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        AI synthesizes 3 phased
+      </text>
+      <text x="0" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        milestones, prioritized tasks,
+      </text>
+      <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        and failure risk mitigations.
+      </text>
+
+      <rect x="0" y="132" width="213" height="24" rx="4" fill="#FAF5FF" stroke="#DDD6FE" stroke-width="1"/>
+      <text x="10" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#6B21A8">⚡ 3 Milestones • 6 Tasks</text>
+    </g>
+  </g>
+
+  <!-- STEP 3 -->
+  <g transform="translate(610, 120)" filter="url(#pipeDrop)">
+    <rect width="245" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(16, 16)">
+      <!-- Step Badge -->
+      <rect width="58" height="20" rx="10" fill="#ECFDF5"/>
+      <text x="29" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#059669" text-anchor="middle">STEP 03</text>
+
+      <circle cx="195" cy="10" r="12" fill="#ECFDF5"/>
+      <text x="195" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#059669" text-anchor="middle">3</text>
+
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Kanban &amp; CRUD Engine</text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#059669">Supabase RLS Persistence</text>
+
+      <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        Convert suggestions to tasks.
+      </text>
+      <text x="0" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        Track completion with instant
+      </text>
+      <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        optimistic UI updates.
+      </text>
+
+      <rect x="0" y="132" width="213" height="24" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="10" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#15803D">✔ PostgreSQL RLS Enforced</text>
+    </g>
+  </g>
+
+  <!-- STEP 4 -->
+  <g transform="translate(885, 120)" filter="url(#pipeDrop)">
+    <rect width="245" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(16, 16)">
+      <!-- Step Badge -->
+      <rect width="58" height="20" rx="10" fill="#EFF6FF"/>
+      <text x="29" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#2563EB" text-anchor="middle">STEP 04</text>
+
+      <circle cx="195" cy="10" r="12" fill="#EFF6FF"/>
+      <text x="195" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#2563EB" text-anchor="middle">4</text>
+
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Production Deployment</text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#2563EB">Tested &amp; Shipped</text>
+
+      <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        Automated Vitest test suite
+      </text>
+      <text x="0" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        passes cleanly. Build deployed
+      </text>
+      <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#475569">
+        to Vercel Edge with CI/CD.
+      </text>
+
+      <rect x="0" y="132" width="213" height="24" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <text x="10" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#16A34A">🚀 Live &amp; Production Ready</text>
+    </g>
+  </g>
+</svg>

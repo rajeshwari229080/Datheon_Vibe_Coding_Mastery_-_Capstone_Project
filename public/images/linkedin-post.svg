@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <linearGradient id="linkedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="brandTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="postShadow" x="-3%" y="-4%" width="106%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.03"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" rx="0" fill="url(#linkedBg)"/>
+  
+  <!-- Subtle Top Accent Strip -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accentBar)"/>
+
+  <!-- Subtle Ambient Glow Orbs -->
+  <circle cx="1120" cy="80" r="160" fill="#EEF2FF" opacity="0.7"/>
+  <circle cx="80" cy="560" r="140" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- ================= TOP HEADER BAR ================= -->
+  <g transform="translate(60, 36)">
+    <!-- Left Capstone Badge -->
+    <rect width="330" height="28" rx="14" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#4F46E5"/>
+    <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#4338CA" letter-spacing="0.4">
+      DATHEON VIBE CODING • CAPSTONE PROJECT
+    </text>
+
+    <!-- Right Status Badges -->
+    <g transform="translate(850, 0)">
+      <rect width="230" height="28" rx="14" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+      <circle cx="14" cy="14" r="4" fill="#16A34A"/>
+      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#15803D">
+        100% TEST PASSING • OPEN SOURCE
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= MAIN HERO HEADLINE ================= -->
+  <g transform="translate(60, 84)">
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#brandTitleGrad)" letter-spacing="-1.2">
+      LaunchPilot <tspan fill="#4F46E5">AI</tspan>
+    </text>
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" fill="#1E293B">
+      Unified AI-Powered Micro-SaaS Workspace
+    </text>
+    <text x="0" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="#64748B">
+      Transform natural-language product visions into shipped software with structured AI guidance &amp; Supabase PostgreSQL.
+    </text>
+  </g>
+
+  <!-- ================= 4 PHASE CARDS (2x2 GRID) ================= -->
+  <!-- CARD 1: Task 1 Landing & Theme -->
+  <g transform="translate(60, 215)" filter="url(#postShadow)">
+    <rect width="525" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(20, 18)">
+      <rect width="64" height="20" rx="4" fill="#EEF2FF"/>
+      <text x="32" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#4338CA" text-anchor="middle">PHASE 1</text>
+      
+      <text x="74" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Landing Page &amp; Theme Engine</text>
+      
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Zero-flicker client-side theme engine with persistent state
+      </text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Accessible Bento feature grid &amp; persona showcase tabs
+      </text>
+      <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Server-validated early-access lead capture form
+      </text>
+
+      <g transform="translate(0, 96)">
+        <rect width="68" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="34" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Next.js 15</text>
+
+        <rect x="76" y="0" width="68" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="110" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">React 19</text>
+
+        <rect x="152" y="0" width="94" height="20" rx="4" fill="#F0FDF4"/>
+        <text x="199" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#15803D" text-anchor="middle">WCAG 2.2 AA</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 2: Task 2 Supabase DB & CRUD -->
+  <g transform="translate(615, 215)" filter="url(#postShadow)">
+    <rect width="525" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(20, 18)">
+      <rect width="64" height="20" rx="4" fill="#ECFDF5"/>
+      <text x="32" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#047857" text-anchor="middle">PHASE 2</text>
+      
+      <text x="74" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Cloud PostgreSQL &amp; CRUD Engine</text>
+      
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Relational PostgreSQL schema (profiles, projects, tasks, leads)
+      </text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Multi-tenant Row Level Security (RLS) isolation at kernel level
+      </text>
+      <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Optimistic UI state updates with persistent offline fallback
+      </text>
+
+      <g transform="translate(0, 96)">
+        <rect width="92" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="46" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Supabase PG</text>
+
+        <rect x="100" y="0" width="86" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="143" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">RLS Guard</text>
+
+        <rect x="194" y="0" width="102" height="20" rx="4" fill="#EFF6FF"/>
+        <text x="245" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">Full CRUD API</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 3: Task 3 Server AI Orchestration -->
+  <g transform="translate(60, 390)" filter="url(#postShadow)">
+    <rect width="525" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(20, 18)">
+      <rect width="64" height="20" rx="4" fill="#F5F3FF"/>
+      <text x="32" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#6B21A8" text-anchor="middle">PHASE 3</text>
+      
+      <text x="74" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Server-Side AI Copilot Orchestrator</text>
+      
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Decomposes product visions into milestones &amp; deliverables
+      </text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Multi-provider adapter: OpenAI GPT-4o-mini, Gemini, Fallback
+      </text>
+      <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • 1-Click deliverable conversion directly into project task board
+      </text>
+
+      <g transform="translate(0, 96)">
+        <rect width="84" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="42" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">OpenAI &amp; Gemini</text>
+
+        <rect x="92" y="0" width="102" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="143" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Rate Limiting</text>
+
+        <rect x="202" y="0" width="112" height="20" rx="4" fill="#FAF5FF"/>
+        <text x="258" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#6B21A8" text-anchor="middle">Zero Secret Leak</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 4: Task 4 Production Verification -->
+  <g transform="translate(615, 390)" filter="url(#postShadow)">
+    <rect width="525" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <g transform="translate(20, 18)">
+      <rect width="64" height="20" rx="4" fill="#EFF6FF"/>
+      <text x="32" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">PHASE 4</text>
+      
+      <text x="74" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Production Ready &amp; Verified</text>
+      
+      <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Vitest automated test suite passing cleanly with 100% green
+      </text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Next.js Turbopack compilation &amp; Vercel deployment setup
+      </text>
+      <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#475569">
+        • Complete system architecture, security audit &amp; video demo script
+      </text>
+
+      <g transform="translate(0, 96)">
+        <rect width="80" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="40" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Vitest Suite</text>
+
+        <rect x="88" y="0" width="76" height="20" rx="4" fill="#F1F5F9"/>
+        <text x="126" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Vercel Edge</text>
+
+        <rect x="172" y="0" width="112" height="20" rx="4" fill="#F0FDF4"/>
+        <text x="228" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#15803D" text-anchor="middle">100% Verified</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM FOOTER BAR ================= -->
+  <g transform="translate(60, 565)">
+    <!-- Author Pill -->
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#334155">
+      Crafted by <tspan font-weight="800" fill="#0F172A">rajeshwari229080</tspan>
+    </text>
+
+    <!-- GitHub Repo Badge Pill -->
+    <g transform="translate(240, 6)">
+      <rect width="470" height="28" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <circle cx="16" cy="14" r="5" fill="#0F172A"/>
+      <text x="30" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155">
+        github.com/rajeshwari229080/Datheon_Vibe_Coding_Mastery_-_Capstone_Project
+      </text>
+    </g>
+
+    <!-- Tech Stack Mini Badges on Right -->
+    <g transform="translate(740, 6)">
+      <rect x="0" y="0" width="72" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="36" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#0F172A" text-anchor="middle">Next.js</text>
+
+      <rect x="80" y="0" width="72" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="116" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#0284C7" text-anchor="middle">React 19</text>
+
+      <rect x="160" y="0" width="84" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="202" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#059669" text-anchor="middle">Supabase</text>
+
+      <rect x="252" y="0" width="88" height="28" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="296" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#7C3AED" text-anchor="middle">AI Copilot</text>
+    </g>
+  </g>
+</svg>
