@@ -5,7 +5,8 @@ import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { useRouter } from "next/navigation";
-import { Sparkles, ArrowRight, Lock, Mail, User } from "lucide-react";
+import { ArrowRight, Lock, Mail, User, Sparkles } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -19,6 +20,7 @@ export function AuthModal({
   initialMode = "signin",
 }: AuthModalProps) {
   const router = useRouter();
+  const { signIn, signUp } = useAuth();
   const [mode, setMode] = useState<"signin" | "signup">(initialMode);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,12 +34,20 @@ export function AuthModal({
     setError(null);
 
     try {
-      // In Task 2, this triggers real Supabase auth session
-      if (!email || !password) {
-        throw new Error("Please enter both email and password");
+      if (!email.trim()) {
+        throw new Error("Please enter your email address");
       }
-      // Demo authentication redirect
-      localStorage.setItem("launchpilot_user", JSON.stringify({ email, name: name || email.split("@")[0] }));
+      if (!password.trim() || password.length < 6) {
+        throw new Error("Password must be at least 6 characters");
+      }
+
+      if (mode === "signup") {
+        if (!name.trim()) throw new Error("Please provide your name");
+        await signUp(name, email, password);
+      } else {
+        await signIn(email, password);
+      }
+
       onClose();
       router.push("/dashboard");
     } catch (err: unknown) {
@@ -90,6 +100,7 @@ export function AuthModal({
           placeholder="••••••••••••"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          helperText="At least 6 characters"
           required
         />
 
@@ -97,6 +108,7 @@ export function AuthModal({
           type="submit"
           variant="primary"
           isLoading={loading}
+          id="auth-submit-btn"
           rightIcon={<ArrowRight className="w-4 h-4" />}
           className="w-full mt-2"
         >
@@ -107,7 +119,10 @@ export function AuthModal({
           {mode === "signin" ? (
             <button
               type="button"
-              onClick={() => setMode("signup")}
+              onClick={() => {
+                setError(null);
+                setMode("signup");
+              }}
               className="text-xs text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400"
             >
               Don't have an account? <span className="font-semibold text-indigo-600 dark:text-indigo-400">Sign Up</span>
@@ -115,7 +130,10 @@ export function AuthModal({
           ) : (
             <button
               type="button"
-              onClick={() => setMode("signin")}
+              onClick={() => {
+                setError(null);
+                setMode("signin");
+              }}
               className="text-xs text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400"
             >
               Already have an account? <span className="font-semibold text-indigo-600 dark:text-indigo-400">Sign In</span>
