@@ -19,6 +19,17 @@ function checkRateLimit(ip: string): boolean {
   return false;
 }
 
+// Static prerender handler for static exports (e.g. GitHub Pages)
+export const dynamic = "force-static";
+
+export async function GET() {
+  return NextResponse.json({
+    status: "ok",
+    service: "LaunchPilot AI Copilot API",
+    methods: ["POST", "GET"],
+  });
+}
+
 export async function POST(req: NextRequest) {
   try {
     const ip = req.headers.get("x-forwarded-for") || "127.0.0.1";

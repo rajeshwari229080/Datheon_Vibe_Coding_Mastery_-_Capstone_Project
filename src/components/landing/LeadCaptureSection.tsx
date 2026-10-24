@@ -41,17 +41,32 @@ export function LeadCaptureSection() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      try {
+        const response = await fetch("/api/leads", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
 
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.error || "Failed to submit early access request.");
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success) {
+            setIsSuccess(true);
+            setFormData({ name: "", email: "", message: "" });
+            return;
+          }
+        }
+      } catch {
+        // Fallback for static hosts (GitHub Pages) where /api/leads is not a live server
       }
+
+      // Client-side resilient fallback to DatabaseService (Supabase or LocalStorage)
+      const { DatabaseService } = await import("@/lib/supabase/service");
+      await DatabaseService.createLead({
+        name: formData.name.trim(),
+        email: formData.email.trim().toLowerCase(),
+        message: formData.message.trim() || undefined,
+      });
 
       setIsSuccess(true);
       setFormData({ name: "", email: "", message: "" });

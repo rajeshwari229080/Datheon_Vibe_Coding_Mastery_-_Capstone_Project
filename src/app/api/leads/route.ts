@@ -18,6 +18,17 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
+// Static prerender handler for static exports (e.g. GitHub Pages)
+export const dynamic = "force-static";
+
+export async function GET() {
+  return NextResponse.json({
+    status: "ok",
+    service: "LaunchPilot Leads API",
+    methods: ["POST", "GET"],
+  });
+}
+
 export async function POST(req: NextRequest) {
   try {
     const clientIp = req.headers.get("x-forwarded-for") || "127.0.0.1";

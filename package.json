@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node ./node_modules/next/dist/bin/next dev",
     "build": "node ./node_modules/next/dist/bin/next build",
+    "build:pages": "node ./scripts/build-pages.mjs",
     "start": "node ./node_modules/next/dist/bin/next start",
     "lint": "eslint",
     "test": "node ./node_modules/vitest/vitest.mjs run"

@@ -53,24 +53,37 @@ export function CopilotDrawer({
     setLoading(true);
     setError(null);
 
-    try {
-      const res = await fetch("/api/ai/copilot", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          projectTitle: currentProject?.title || customGoal,
-          description: currentProject?.description || undefined,
-          category: currentProject?.category || "SaaS Application",
-          userGoal: customGoal || undefined,
-        }),
-      });
+    const payload = {
+      projectTitle: currentProject?.title || customGoal,
+      description: currentProject?.description || undefined,
+      category: currentProject?.category || "SaaS Application",
+      userGoal: customGoal || undefined,
+    };
 
-      const json = await res.json();
-      if (!res.ok || !json.success) {
-        throw new Error(json.error || "Failed to generate AI strategy");
+    try {
+      try {
+        const res = await fetch("/api/ai/copilot", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && json.data) {
+            setResult(json.data);
+            setAddedTasks({});
+            return;
+          }
+        }
+      } catch {
+        // Fallback for static hosts (GitHub Pages) where /api/ai/copilot is not a live server
       }
 
-      setResult(json.data);
+      // Client-side fallback to deterministic synthesizer
+      const { aiProvider } = await import("@/lib/ai/provider");
+      const fallbackResult = await aiProvider.generateProjectGuidance(payload);
+      setResult(fallbackResult);
       setAddedTasks({});
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "AI Copilot request failed");
